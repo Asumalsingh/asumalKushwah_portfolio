@@ -10,7 +10,7 @@ export default function Social() {
     { logo: Facebook, url: "https://www.facebook.com/asumal.kushwah.5/" },
     {
       logo: LinkedIn,
-      url: "https://www.linkedin.com/in/asumal-singh-035397240/",
+      url: "https://www.linkedin.com/in/asumal-kushwah/",
     },
   ];
   return (

@@ -7,7 +7,7 @@ export default function PortFolio() {
     {
       image: INotebook,
       title: "Note taking web app",
-      demo: "https://statuesque-taiyaki-d42f3d.netlify.app/",
+      demo: "https://i-notebook-mern.netlify.app/",
       code: "https://github.com/Asumalsingh/i-notebook-frontend",
     },
     {
@@ -42,20 +42,22 @@ export default function PortFolio() {
                 <p className="my-6 text-xl">{project.title}</p>
                 <div className="flex justify-between items-center">
                   <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`pl-3 hover:scale-105 text-blue-500 duration-100`}
-                  >
-                    Demo
-                  </a>
-                  <a
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`pr-3 hover:scale-105 text-blue-500 duration-100`}
+                    className={`pr-3 hover:scale-110 text-blue-500 duration-100`}
                   >
                     Code
+                  </a>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${
+                      project.demo === "" ? "hidden" : ""
+                    } pl-3 hover:scale-110 text-blue-500 duration-100`}
+                  >
+                    Demo
                   </a>
                 </div>
               </div>

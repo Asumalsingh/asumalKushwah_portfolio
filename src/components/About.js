@@ -37,10 +37,10 @@ export default function About() {
               {aboutData.map((data, index) => {
                 return (
                   <div key={index}>
-                    <p className="text-xl md:text-4xl font-semibold mt-8 tracking-tighter">
+                    <p className="text-4xl font-semibold mt-8 tracking-tighter">
                       {data.time} <span className="text-blue-500">+</span>
                     </p>
-                    <p className="text-xs md:text-base capitalize">
+                    <p className="text-sm md:text-base text-gray-500 capitalize">
                       {data.title}
                     </p>
                   </div>

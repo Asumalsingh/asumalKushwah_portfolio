@@ -24,7 +24,7 @@ export default function Skills() {
     { image: graphqlImage, title: "Graphql", style: "shadow-pink-400" },
   ];
   return (
-    <section name="skills" className="w-full">
+    <section name="skills" className="w-full z-0">
       <div className="max-w-screen-xl mx-auto px-5 md:px-10 pt-24">
         <div>
           <h2 className="text-4xl pb-4 font-bold underline underline-offset-8 decoration-gray-600">
@@ -39,10 +39,10 @@ export default function Skills() {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-lg shadow-md p-4 ${skill.style}`}
+                className={`group bg-white rounded-lg shadow-md p-4  ${skill.style}`}
               >
                 <img
-                  className="w-20 mx-auto hover:scale-105 duration-200"
+                  className="w-20 mx-auto group-hover:scale-110 duration-100"
                   src={skill.image}
                   alt=""
                 />

@@ -33,14 +33,21 @@ export default function Navbar() {
       </div>
 
       {nav && (
-        <ul className="z-10 flex lg:hidden flex-col items-center w-full py-24 absolute top-0 left-0 bg-slate-50 h-screen">
+        <ul className="z-10 flex lg:hidden flex-col items-center w-full  py-24 absolute top-0 left-0 bg-slate-50 h-screen">
           {links.map((link, index) => {
             return (
               <li
                 key={index}
                 className="py-3 px-4 capitalize cursor-pointer text-gray-500 font-medium hover:scale-105 duration-100 "
               >
-                <Link to={link} smooth duration={500}>
+                <Link
+                  to={link}
+                  smooth
+                  duration={500}
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                >
                   {link}
                 </Link>
               </li>
