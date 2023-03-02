@@ -11,6 +11,7 @@ import javaImage from "../assets/skills/java.png";
 import mongoImage from "../assets/skills/mongo.png";
 
 export default function Skills() {
+  // Skills array
   const skills = [
     { image: javaImage, title: "Java", style: "shadow-red-500" },
     { image: javascriptImage, title: "Javascript", style: "shadow-yellow-500" },
