@@ -28,9 +28,12 @@ export default function About() {
               <p>
                 I am a software engineer with a passion for designing and
                 developing high-quality software solutions. Experienced with
-                Data structures & algorithms and designing optimal solutions, I
-                am always seeking new challenges to help me grow as a
-                professional.
+                <span className="text-black font-medium">
+                  {" "}
+                  Data structures & algorithms{" "}
+                </span>
+                and have good problem solving skills, I am always seeking new
+                challenges to help me grow as a professional.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 text-center">

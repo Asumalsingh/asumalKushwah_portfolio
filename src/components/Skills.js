@@ -15,14 +15,14 @@ export default function Skills() {
   const skills = [
     { image: javaImage, title: "Java", style: "shadow-red-500" },
     { image: javascriptImage, title: "Javascript", style: "shadow-yellow-500" },
-    { image: htmlImage, title: "HTML", style: "shadow-orange-500" },
-    { image: cssImage, title: "CSS", style: "shadow-blue-500" },
     { image: reactJsImage, title: "React", style: "shadow-cyan-500" },
     { image: nextJsImage, title: "Next Js", style: "shadow-slate-400" },
     { image: nodeJsImage, title: "Node Js", style: "shadow-lime-600" },
     { image: mongoImage, title: "Mongo DB", style: "shadow-green-600" },
-    { image: tailwindImage, title: "Tailwind CSS", style: "shadow-sky-400" },
     { image: graphqlImage, title: "Graphql", style: "shadow-pink-400" },
+    { image: htmlImage, title: "HTML", style: "shadow-orange-500" },
+    { image: cssImage, title: "CSS", style: "shadow-blue-500" },
+    { image: tailwindImage, title: "Tailwind CSS", style: "shadow-sky-400" },
   ];
   return (
     <section name="skills" className="w-full z-0">

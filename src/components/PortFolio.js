@@ -1,23 +1,8 @@
 import React from "react";
-import INotebook from "../assets/portfolio/inotebook.png";
-import TodoList from "../assets/portfolio/todo-list.png";
+
+import projects from "../projectsData";
 
 export default function PortFolio() {
-  const projects = [
-    {
-      image: INotebook,
-      title: "Note taking web app",
-      demo: "https://i-notebook-mern.netlify.app/",
-      code: "https://github.com/Asumalsingh/i-notebook-frontend",
-    },
-    {
-      image: TodoList,
-      title: "Todo list using pure javascript",
-      demo: "",
-      code: "https://github.com/Asumalsingh/todo-lsit",
-    },
-  ];
-
   // console.log(projects[1].demo === "");
   return (
     <section name="portfolio" className="w-full ">
@@ -32,15 +17,24 @@ export default function PortFolio() {
             return (
               <div
                 key={index}
-                className="rounded-lg shadow-md bg-white p-4 shadow-gray-500"
+                className="rounded-lg shadow-lg bg-white flex flex-col justify-between"
               >
-                <img
-                  className="rounded-t-lg"
-                  src={project.image}
-                  alt="i-notebook"
-                />
-                <p className="my-6 text-xl">{project.title}</p>
-                <div className="flex justify-between items-center">
+                <div>
+                  <img
+                    className="rounded-t-lg"
+                    src={project.image}
+                    alt="i-notebook"
+                  />
+                  <h2 className="mt-6 px-4 mb-1 text-lg font-medium">
+                    {project.title}
+                  </h2>
+                  <ul className="list-disc ml-4 px-4 text-sm">
+                    {project.description.map((bullet, idx) => {
+                      return <li key={idx}>{bullet}</li>;
+                    })}
+                  </ul>
+                </div>
+                <div className="flex p-5 justify-between items-center">
                   <a
                     href={project.code}
                     target="_blank"
