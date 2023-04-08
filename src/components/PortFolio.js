@@ -20,11 +20,14 @@ export default function PortFolio() {
                 className="rounded-lg shadow-lg bg-white flex flex-col justify-between"
               >
                 <div>
-                  <img
-                    className="rounded-t-lg"
-                    src={project.image}
-                    alt="i-notebook"
-                  />
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src={`https://www.youtube.com/embed/${project.videoId}`}
+                    title="Todo List"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen={true}
+                  ></iframe>
+
                   <h2 className="mt-6 px-4 mb-1 text-lg font-medium">
                     {project.title}
                   </h2>
@@ -39,7 +42,9 @@ export default function PortFolio() {
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`pr-3 hover:scale-110 text-blue-500 duration-100`}
+                    className={`${
+                      project.code === "" ? "hidden" : ""
+                    } pl-3 hover:scale-110 text-blue-500 duration-100`}
                   >
                     Code
                   </a>

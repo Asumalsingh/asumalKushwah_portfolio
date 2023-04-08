@@ -1,10 +1,7 @@
-import INotebook from "./assets/portfolio/inotebook.png";
-import TodoList from "./assets/portfolio/todo-list.png";
-import ChitChat from "./assets/portfolio/chit-chat.png";
 const projects = [
   {
-    image: ChitChat,
-    title: "Chit-Chit (Social media web app)",
+    videoId: "mDbaZCi-WhM",
+    title: "Chit-Chat (Social media web app)",
     demo: "https://chitchat-mern.netlify.app",
     code: "https://github.com/Asumalsingh/chit-chat",
     description: [
@@ -16,24 +13,45 @@ const projects = [
     ],
   },
   {
-    image: INotebook,
+    videoId: "H9w7dx5d-Uo",
     title: "Note taking web app",
     demo: "https://i-notebook-mern.netlify.app/",
     code: "https://github.com/Asumalsingh/i-notebook-frontend",
     description: [
       "User can login with google",
-      "Use can add, delete, update & share his/her notes with others",
+      "User can add, delete & update his/her notes",
+      "user can share his/her notes with others",
       "Email will be sent when user share note with others",
       "Added search APIs & pagination",
       "Technology used : MERN Stack, JWT, Bcrypt, Nodemailer",
     ],
   },
+
   {
-    image: TodoList,
+    videoId: "4fZfftUEKyw",
+    title: "Sahab20 (Educational platform)",
+    demo: "",
+    code: "",
+    description: [
+      "Sahab20 is a educational platform for class 11-12 & JEE-NEET",
+      "Added notes pdf",
+      "Added quiz for JEE-NEET",
+      "Technology used : Next.js, Supabase, Graphql, SQL, Bulma CSS",
+    ],
+  },
+  {
+    videoId: "ROLyFvXvZ14",
+    title: "Taja Khabar (News web app)",
+    demo: "",
+    code: "https://github.com/Asumalsingh/taja-khabar",
+    description: ["Technology used : Next.js , Tailwind CSS & News API "],
+  },
+  {
+    videoId: "55rzBQ2Vlmw",
     title: "Todo list using pure javascript",
     demo: "",
     code: "https://github.com/Asumalsingh/todo-lsit",
-    description: ["User can create and delte todos"],
+    description: ["User can create and delete todos"],
   },
 ];
 

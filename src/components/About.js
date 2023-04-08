@@ -1,11 +1,8 @@
 import React from "react";
 import MyImage from "../assets/myImage.jpeg";
+import projects from "../projectsData";
 
 export default function About() {
-  const aboutData = [
-    { time: "1", title: "years experience" },
-    { time: "4", title: "Completed Projects" },
-  ];
   return (
     <section name="about" className="w-full">
       <div className="max-w-screen-xl pt-24 px-5 md:px-10 mx-auto">
@@ -37,18 +34,23 @@ export default function About() {
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 text-center">
-              {aboutData.map((data, index) => {
-                return (
-                  <div key={index}>
-                    <p className="text-4xl font-semibold mt-8 tracking-tighter">
-                      {data.time} <span className="text-blue-500">+</span>
-                    </p>
-                    <p className="text-sm md:text-base text-gray-500 capitalize">
-                      {data.title}
-                    </p>
-                  </div>
-                );
-              })}
+              <div>
+                <p className="text-4xl font-semibold mt-8 tracking-tighter">
+                  1 <span className="text-blue-500">+</span>
+                </p>
+                <p className="text-sm md:text-base text-gray-500 capitalize">
+                  {" "}
+                  Year experience
+                </p>
+              </div>
+              <div>
+                <p className="text-4xl font-semibold mt-8 tracking-tighter">
+                  {projects.length} <span className="text-blue-500">+</span>
+                </p>
+                <p className="text-sm md:text-base text-gray-500 capitalize">
+                  Projects completed
+                </p>
+              </div>
             </div>
           </div>
         </div>
