@@ -1,9 +1,19 @@
 const projects = [
   {
+    videoId: "oOUKvMlDEtE",
+    title: "Chat-Gpt Clone",
+    demo: "https://chatgpt-light.vercel.app",
+    code: "https://github.com/Asumalsingh/chatgpt-clone",
+    description: [
+      "User can also generate image via text",
+      "Technology used : Nextjs, Openai API & Tailwind CSS",
+    ],
+  },
+  {
     videoId: "mDbaZCi-WhM",
     title: "Chit-Chat (Social media web app)",
-    demo: "https://chitchat-mern.netlify.app",
-    code: "https://github.com/Asumalsingh/chit-chat",
+    demo: "https://chitchat-social.vercel.app",
+    code: "https://github.com/Asumalsingh/social-media",
     description: [
       "User can login",
       "User can upload & delete his/her photos, likes posts, follow & unfollow other users",
@@ -16,7 +26,7 @@ const projects = [
     videoId: "H9w7dx5d-Uo",
     title: "Note taking web app",
     demo: "https://i-notebook-mern.netlify.app/",
-    code: "https://github.com/Asumalsingh/i-notebook-frontend",
+    code: "https://github.com/Asumalsingh/notebook",
     description: [
       "User can login with google",
       "User can add, delete & update his/her notes",
